@@ -36,7 +36,7 @@ Create the `developer-user` and `tester-user` IAM users, along with the `Develop
 ### Task 3: Create a Custom IAM Policy
 The practical asks for a customer-managed policy named `CustomS3ReadPolicy` that allows listing the practical bucket and reading its objects only, without allowing uploads, overwrites, or deletions.
 
-**Evidence/status:**
+**Evidence/status:screenshots/custom-iam-policy-json.png**
 
 ### Task 4: Create an IAM Role for EC2
 Create an `EC2S3ReadRole` role trusted by the EC2 service, with permission to read objects from the practical bucket only. Long-term access keys should not be created or stored for the EC2 instance.
@@ -48,10 +48,10 @@ Record the results of your actual tests below. Replace each placeholder with the
 
 | Action tested | Expected result | Actual result |
 |---|---|---|
-| List permitted S3 objects | Allowed | [Enter observed result] |
-| Download a permitted object | Allowed | [Enter observed result] |
-| Upload using a read-only identity | Denied | [Enter observed result] |
-| Delete using a read-only identity | Denied | [Enter observed result] |
+| List permitted S3 objects | Allowed | screenshots/iam-user-list-objects-access.png |
+| Download a permitted object | Allowed | screenshots/iam-user-permission-test-results.png |
+| Upload using a read-only identity | Denied | screenshots/permission-test-result.png] |
+| Delete using a read-only identity | Denied | screenshots/permissions-test-results.png |
 
 ### Task 6: Create and Secure an S3 Bucket
 Create a uniquely named S3 bucket in the assigned AWS Region, keep S3 Block Public Access enabled, enable default server-side encryption, and upload three sample files.
@@ -68,7 +68,7 @@ Configure the bucket policy to allow the intended `developer-user` principal to 
 
 **Explanation:** An S3 bucket policy is a resource-based policy attached to a bucket. It defines which principals can perform specified actions on that bucket and its objects. Test access as the intended principal and verify that public access remains blocked.
 
-**Evidence/status:** Add a screenshot of the configured policy and access tests if completed. No bucket policy JSON file is included in this repository at present.
+**Evidence/status:screenshots/custom-s3-policy.png**.
 
 ### Task 9: Configure a Lifecycle Rule
 Create and enable a lifecycle rule named `BackupTransitionRule` for objects under the `backups/` prefix, configured to transition eligible objects to S3 Standard-IA after 30 days.
@@ -90,7 +90,6 @@ Configure a separate destination bucket for access logs and enable server access
 ## Repository Contents
 - `README.md` — Project documentation and task explanations.
 - `screenshots/` — Practical screenshots (add this folder and your images).
-- 
 
 ## Conclusion
 This practical covers important AWS IAM and S3 concepts, including identity and permission management, least-privilege access, secure object storage, versioning, lifecycle management, logging, and encryption. The screenshots and test results in this repository should reflect the configurations and checks actually completed.
