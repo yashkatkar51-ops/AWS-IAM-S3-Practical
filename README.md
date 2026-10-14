@@ -34,7 +34,7 @@ This project demonstrates hands-on practice with AWS Identity and Access Managem
 ## Test Results
 Document the actual results of each test.
 
-| Test | Expected Result | Actual Result |
+| Test | Expected Result |
 |---|---|---|
 | List permitted S3 objects | Allowed |
 | Download permitted objects | Allowed |
