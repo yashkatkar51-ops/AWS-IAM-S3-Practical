@@ -1,4 +1,4 @@
-# AWS IAM and Amazon S3 Practical Project
+# AWS IAM and Amazon S3 Practical 
 
 ## Project Overview
 This project demonstrates hands-on practice with AWS Identity and Access Management (IAM) and Amazon Simple Storage Service (S3). It focuses on identity management, access permissions, bucket security, data protection, and storage management.
@@ -34,13 +34,13 @@ This project demonstrates hands-on practice with AWS Identity and Access Managem
 ## Test Results
 Document the actual results of each test.
 
-| Test | Expected Result |
+| Test | Expected Result | 
 |---|---|---|
-| List permitted S3 objects | Allowed |
-| Download permitted objects | Allowed |
-| Upload using a read-only identity | Denied |
-| Delete using a read-only identity | Denied |
-| Anonymous/public access | Blocked |
+| List permitted S3 objects | Allowed | 
+| Download permitted objects | Allowed | 
+| Upload using a read-only identity | Denied | 
+| Delete using a read-only identity | Denied | 
+| Anonymous/public access | Blocked | 
 
 ## Key Learnings
 - Managing IAM users, groups, roles, and policies.
@@ -55,6 +55,5 @@ This practical helped me gain hands-on experience with AWS IAM and Amazon S3. I 
 
 ## Evidence
 Screenshots and policy files are included in this repository for reference.
-
 
 
