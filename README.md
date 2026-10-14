@@ -36,11 +36,11 @@ Document the actual results of each test.
 
 | Test | Expected Result | Actual Result |
 |---|---|---|
-| List permitted S3 objects | Allowed | [] |
-| Download permitted objects | Allowed | [Enter result] |
-| Upload using a read-only identity | Denied | [Enter result] |
-| Delete using a read-only identity | Denied | [Enter result] |
-| Anonymous/public access | Blocked | [Enter result] |
+| List permitted S3 objects | Allowed |
+| Download permitted objects | Allowed |
+| Upload using a read-only identity | Denied |
+| Delete using a read-only identity | Denied |
+| Anonymous/public access | Blocked |
 
 ## Key Learnings
 - Managing IAM users, groups, roles, and policies.
@@ -56,5 +56,5 @@ This practical helped me gain hands-on experience with AWS IAM and Amazon S3. I 
 ## Evidence
 Screenshots and policy files are included in this repository for reference.
 
-**Note:** Update the task status, test results, and evidence to match your actual implementation before submitting.
+
 
