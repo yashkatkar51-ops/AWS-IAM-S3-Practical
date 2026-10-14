@@ -29,18 +29,6 @@ This project demonstrates hands-on practice with AWS Identity and Access Managem
 ## Repository Structure
 - `README.md` — Project documentation
 - `screenshots/` — Practical evidence and test screenshots
-- `policies/` — Custom IAM and S3 bucket policy JSON files
-
-## Test Results
-Document the actual results of each test.
-
-| Test | Expected Result | 
-|---|---|---|
-| List permitted S3 objects | Allowed | 
-| Download permitted objects | Allowed | 
-| Upload using a read-only identity | Denied | 
-| Delete using a read-only identity | Denied | 
-| Anonymous/public access | Blocked | 
 
 ## Key Learnings
 - Managing IAM users, groups, roles, and policies.
